@@ -1,9 +1,11 @@
 <div class="jumbotron">
-  <h2>Welcome to Phoenix!</h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <h1>To Texas!</h1>
+  <h2>(and yonder)</h2>
+  <div class="logo"><img src="/images/rv.png"\></div>
+  <p class="lead">The trip of a lifetime across the American Southwest</p>
 </div>
 
-<div class="row marketing">
+<!-- <div class="row marketing">
   <div class="col-lg-6">
     <h4>Resources</h4>
     <ul>
@@ -33,4 +35,4 @@
       </li>
     </ul>
   </div>
-</div>
+</div> -->

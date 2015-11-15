@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Phoenix!</title>
+    <title>To Texas and yonder!</title>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
@@ -15,7 +16,9 @@
     <div class="container" role="main">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
+          <li><a href="#">Where?</a></li>
+          <li><a href="#">When?</a></li>
+          <li><a href="#">Who?</a></li>
         </ul>
         <span class="logo"></span>
       </div>
