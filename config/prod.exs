@@ -13,7 +13,8 @@ use Mix.Config
 # which you typically run after static files are built.
 config :yonder, Yonder.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "example.com", port: 80],
+  url: [scheme: "https", host: "to-texas-and-yonder.herokuapp.com", port: 443],
+  force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/manifest.json"
 
 # Do not print debug messages in production
@@ -26,7 +27,7 @@ config :logger, level: :info
 #
 #     config :yonder, Yonder.Endpoint,
 #       ...
-#       url: [host: "example.com", port: 443],
+#       url: [host: "example.com", port: 80],
 #       https: [port: 443,
 #               keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
 #               certfile: System.get_env("SOME_APP_SSL_CERT_PATH")]
@@ -58,4 +59,11 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
-import_config "prod.secret.exs"
+# DISABLED FOR HEROKU
+# import_config "prod.secret.exs"
+
+# Configure your database
+config :yonder, Yonder.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  url: System.get_env("DATABASE_URL"),
+  pool_size: 20
