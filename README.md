@@ -1,5 +1,5 @@
 # Yonder
-The official website of the Yonder roadtrip.
+The official website of the Yonder roadtrip
 
 To start your Phoenix app:
 
