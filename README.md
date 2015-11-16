@@ -1,5 +1,8 @@
 # Yonder
+
 The official website of the Yonder roadtrip
+
+http://to-texas-and-yonder.herokuapp.com/
 
 To start your Phoenix app:
 
