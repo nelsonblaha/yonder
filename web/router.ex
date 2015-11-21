@@ -17,6 +17,8 @@ defmodule Yonder.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/attractions", AttractionController
+    get "/map", AttractionController, :map
   end
 
   # Other scopes may use custom stacks.

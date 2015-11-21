@@ -16,7 +16,7 @@
     <div class="container" role="main">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li><a href="#">Where?</a></li>
+          <li><a href="/map">Where?</a></li>
           <li><a href="#">When?</a></li>
           <li><a href="#">Who?</a></li>
         </ul>

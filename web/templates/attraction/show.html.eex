@@ -1,0 +1,23 @@
+<h2>Show attraction</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @attraction.name %>
+  </li>
+
+  <li>
+    <strong>Lat:</strong>
+    <%= @attraction.lat %>
+  </li>
+
+  <li>
+    <strong>Long:</strong>
+    <%= @attraction.long %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: attraction_path(@conn, :edit, @attraction) %>
+<%= link "Back", to: attraction_path(@conn, :index) %>
